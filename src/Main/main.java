@@ -3,9 +3,12 @@ import hammingCode.hammingCode;
 
 public class main {
     public static void main(String[] args){
-        hammingCode coder = new hammingCode();
-        String code = coder.codification("hello");
-        String decode = coder.fromBinary(code);
-        System.out.println(decode);
+        hammingCode hamming = new hammingCode();
+        String code = hamming.codification("hello");
+        String decode = hamming.fromBinary(code);
+        System.out.println("Code: " + code + "\nWord: " + decode);
+
+        System.out.println("Valid: " + hammingCode.isValidHammingCode(code));
+        System.out.println("Errro position: " + hammingCode.findErrorPosition(code));
     }
 }
