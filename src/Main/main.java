@@ -9,6 +9,6 @@ public class main {
         System.out.println("Code: " + code + "\nWord: " + decode);
 
         System.out.println("Valid: " + hammingCode.isValidHammingCode(code));
-        System.out.println("Errro position: " + hammingCode.findErrorPosition(code));
+        System.out.println("Error position: " + hammingCode.findErrorPosition(code));
     }
 }
